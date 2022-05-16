@@ -9,11 +9,14 @@ a = 5;
 b = 'texto';
 c = true;
 
-if (Math.random() >= 0.5) {
+let rand = Math.random();
+console.log(rand);
+
+if (rand >= 0.5) {
   c = 100;
 }
 
-function d(param1: number, param2: boolean) {
+function d(param1: number, param2: any) {
   if (typeof param2 === 'number') {
     return param1 + param2;
   } else {
